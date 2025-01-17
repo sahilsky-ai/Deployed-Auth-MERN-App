@@ -30,7 +30,7 @@ function Login() {
     console.log("Sending login request with:", { email, password });
   
     try {
-      const url = "http://localhost:8001/auth/login";
+      const url = "https://deploye-auth-mern-app-api.vercel.app/auth/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {
