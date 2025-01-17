@@ -22,7 +22,7 @@ function Home() {
 
   const fetchProducts = async () => {
     try{
-      const url = "http://localhost:8001/products";
+      const url = "https://deploye-auth-mern-app-api.vercel.app/products";
       const token = localStorage.getItem('token');
        if (!token) {
         throw new Error("No token found in localStorage.");
